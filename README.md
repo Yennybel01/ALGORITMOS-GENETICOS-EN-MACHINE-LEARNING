@@ -21,15 +21,18 @@ Implementación de tres aplicaciones de Algoritmos Genéticos (AG) en el context
 
 ### 1. Selección de Características (`feature_selection.py`)
 
-Identifica el subconjunto óptimo de las 22 features que maximiza la precisión de un Random Forest, penalizando el exceso de variables.
+Identifica el subconjunto óptimo de las 22 features , penalizando el exceso de variables.
 
+---
 | Parámetro | Valor |
-|-----------|-------|
-| Cromosoma | Binario (22 genes) |
-| Función de aptitud | Accuracy CV-5 con penalización α·(k/n) |
-| Población / Generaciones | 20 / 15 |
-| Cruzamiento / Mutación | 0.80 / 0.05 (bit-flip) |
-
+|---|---|
+| Representación | Binario (22 bits) |
+| Función de aptitud | Accuracy CV-5 con penalización α·(\|s\|/n) |
+| Abejas / Iteraciones | 20 / 50 |
+| Operador de vecindad | Bit-flip aleatorio |
+| Límite de abandono (limit) | 8 |
+| Alpha (α) | 0.05 |
+| Resultado obtenido | 4 features, reducción del 81.8% |
 **Resultado esperado:** subconjunto de 6–10 features con reducción de dimensionalidad del 50–70 %.
 
 ---
