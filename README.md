@@ -33,7 +33,7 @@ Identifica el subconjunto óptimo de las 22 features , penalizando el exceso de 
 | Límite de abandono (limit) | 8 |
 | Alpha (α) | 0.05 |
 | Resultado obtenido | 4 features, reducción del 81.8% |
-**Resultado esperado:** subconjunto de 6–10 features con reducción de dimensionalidad del 50–70 %.
+
 
 ---
 
